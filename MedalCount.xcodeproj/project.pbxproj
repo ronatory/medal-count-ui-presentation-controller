@@ -19,6 +19,7 @@
 		0EDB647C1D3248B30000FA79 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB64781D3248B30000FA79 /* Games.swift */; };
 		0EDB647D1D3248B30000FA79 /* GamesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB64791D3248B30000FA79 /* GamesDataStore.swift */; };
 		0EDB99A81D32A1860005CA3E /* MedalCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */; };
+		47040DAB1DF30D3F001ED40E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 47040DAA1DF30D3F001ED40E /* README.md */; };
 		950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950818D01D480EE2003B31DC /* GamesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0EDB64781D3248B30000FA79 /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		0EDB64791D3248B30000FA79 /* GamesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesDataStore.swift; sourceTree = "<group>"; };
 		0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCountViewController.swift; sourceTree = "<group>"; };
+		47040DAA1DF30D3F001ED40E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		950818D01D480EE2003B31DC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		0E15D2261D2ADA7E00A2E90B /* MedalCount */ = {
 			isa = PBXGroup;
 			children = (
+				47040DAA1DF30D3F001ED40E /* README.md */,
 				0E49B1C11D3239EE00A8B416 /* Controllers */,
 				0EDDD5501D317792005DF417 /* Model */,
 				0E88812B1D4346BF0045C77B /* Presentation */,
@@ -197,6 +200,7 @@
 			files = (
 				0EDB647B1D3248B30000FA79 /* MedalWinner.swift in Sources */,
 				0E15D22A1D2ADA7E00A2E90B /* MainViewController.swift in Sources */,
+				47040DAB1DF30D3F001ED40E /* README.md in Sources */,
 				0EDB64651D32403B0000FA79 /* GamesTableViewController.swift in Sources */,
 				0EDB647D1D3248B30000FA79 /* GamesDataStore.swift in Sources */,
 				950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */,
