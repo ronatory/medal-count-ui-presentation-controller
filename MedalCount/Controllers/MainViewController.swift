@@ -31,6 +31,7 @@ final class MainViewController: UIViewController {
   @IBOutlet weak var logoImageView: UIImageView!
 
   // MARK: - Properties
+  lazy var slideInTransitionDelegate = SlideInPresentationManager()
   private let dataStore = GamesDataStore()
   fileprivate var presentedGames: Games? {
     didSet {
@@ -48,14 +49,40 @@ final class MainViewController: UIViewController {
   // MARK: - Navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let controller = segue.destination as? GamesTableViewController {
+      
+      slideInTransitionDelegate.disableCompactHeight = false
+      
       if segue.identifier == "SummerSegue" {
         controller.gamesArray = dataStore.summer
+        
+        // presentation direction of summer games menu is .left
+        slideInTransitionDelegate.direction = .left
+        
       } else if segue.identifier == "WinterSegue" {
         controller.gamesArray = dataStore.winter
+        
+        // presentation direction of winter games menu is .right
+        slideInTransitionDelegate.direction = .right
+        
       }
       controller.delegate = self
+      
+      // games controller's transitionDelegate is now the slideInTransitionDelegate declared earlier
+      controller.transitioningDelegate = slideInTransitionDelegate
+      
+      // make the presented controller expect a custom presentation instead of an iOS default presentation
+      controller.modalPresentationStyle = .custom
+      
     } else if let controller = segue.destination as? MedalCountViewController {
+      slideInTransitionDelegate.disableCompactHeight = true
+      
       controller.medalCount = presentedGames?.medalCount
+      
+      // presentatin direction of the MedalCountViewController is .bottom 
+      // and transitioningDelegate and modalPresentationStyle are set as you did in Steps 3 and 4
+      slideInTransitionDelegate.direction = .bottom
+      controller.transitioningDelegate = slideInTransitionDelegate
+      controller.modalPresentationStyle = .custom
     }
   }
 }

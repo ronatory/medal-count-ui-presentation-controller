@@ -20,6 +20,10 @@
 		0EDB647D1D3248B30000FA79 /* GamesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB64791D3248B30000FA79 /* GamesDataStore.swift */; };
 		0EDB99A81D32A1860005CA3E /* MedalCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */; };
 		47040DAB1DF30D3F001ED40E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 47040DAA1DF30D3F001ED40E /* README.md */; };
+		47040DAD1DF31733001ED40E /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47040DAC1DF31733001ED40E /* SlideInPresentationManager.swift */; };
+		47040DAF1DF32089001ED40E /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47040DAE1DF32089001ED40E /* SlideInPresentationController.swift */; };
+		470AC5BB1DF4BC3B0070CCDE /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AC5BA1DF4BC3B0070CCDE /* SlideInPresentationAnimator.swift */; };
+		472B556F1DF61396008A3193 /* result.gif in Resources */ = {isa = PBXBuildFile; fileRef = 472B556E1DF61396008A3193 /* result.gif */; };
 		950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950818D01D480EE2003B31DC /* GamesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		0EDB64791D3248B30000FA79 /* GamesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesDataStore.swift; sourceTree = "<group>"; };
 		0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCountViewController.swift; sourceTree = "<group>"; };
 		47040DAA1DF30D3F001ED40E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		47040DAC1DF31733001ED40E /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = MedalCount/SlideInPresentationManager.swift; sourceTree = SOURCE_ROOT; };
+		47040DAE1DF32089001ED40E /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationController.swift; path = MedalCount/SlideInPresentationController.swift; sourceTree = SOURCE_ROOT; };
+		470AC5BA1DF4BC3B0070CCDE /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationAnimator.swift; path = MedalCount/SlideInPresentationAnimator.swift; sourceTree = SOURCE_ROOT; };
+		472B556E1DF61396008A3193 /* result.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = result.gif; sourceTree = SOURCE_ROOT; };
 		950818D01D480EE2003B31DC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +82,7 @@
 		0E15D2261D2ADA7E00A2E90B /* MedalCount */ = {
 			isa = PBXGroup;
 			children = (
+				472B556E1DF61396008A3193 /* result.gif */,
 				47040DAA1DF30D3F001ED40E /* README.md */,
 				0E49B1C11D3239EE00A8B416 /* Controllers */,
 				0EDDD5501D317792005DF417 /* Model */,
@@ -102,6 +111,9 @@
 		0E88812B1D4346BF0045C77B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				47040DAE1DF32089001ED40E /* SlideInPresentationController.swift */,
+				47040DAC1DF31733001ED40E /* SlideInPresentationManager.swift */,
+				470AC5BA1DF4BC3B0070CCDE /* SlideInPresentationAnimator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -188,6 +200,7 @@
 				0E15D22F1D2ADA7E00A2E90B /* Assets.xcassets in Resources */,
 				0E15D23A1D2ADA8F00A2E90B /* GamesData.plist in Resources */,
 				0E15D22D1D2ADA7E00A2E90B /* Main.storyboard in Resources */,
+				472B556F1DF61396008A3193 /* result.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EDB647B1D3248B30000FA79 /* MedalWinner.swift in Sources */,
+				470AC5BB1DF4BC3B0070CCDE /* SlideInPresentationAnimator.swift in Sources */,
 				0E15D22A1D2ADA7E00A2E90B /* MainViewController.swift in Sources */,
 				47040DAB1DF30D3F001ED40E /* README.md in Sources */,
 				0EDB64651D32403B0000FA79 /* GamesTableViewController.swift in Sources */,
@@ -206,7 +220,9 @@
 				950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */,
 				0EDB647C1D3248B30000FA79 /* Games.swift in Sources */,
 				0E15D2281D2ADA7E00A2E90B /* AppDelegate.swift in Sources */,
+				47040DAD1DF31733001ED40E /* SlideInPresentationManager.swift in Sources */,
 				0EDB647A1D3248B30000FA79 /* MedalCount.swift in Sources */,
+				47040DAF1DF32089001ED40E /* SlideInPresentationController.swift in Sources */,
 				0EDB99A81D32A1860005CA3E /* MedalCountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MedalCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronkliffer.MedalCount;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.MedalCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -340,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MedalCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronkliffer.MedalCount;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.MedalCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
